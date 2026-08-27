@@ -1,0 +1,6 @@
+# staging overrides for backend
+podinfo:
+  replicaCount: 2
+  logLevel: info
+  ui:
+    message: "backend @ staging"

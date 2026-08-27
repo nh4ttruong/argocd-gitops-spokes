@@ -1,0 +1,6 @@
+# dev overrides for backend
+podinfo:
+  replicaCount: 1
+  logLevel: debug
+  ui:
+    message: "backend @ dev"

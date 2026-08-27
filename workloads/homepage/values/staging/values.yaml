@@ -1,0 +1,6 @@
+# staging overrides for homepage
+podinfo:
+  replicaCount: 2
+  logLevel: info
+  ui:
+    message: "homepage @ staging"

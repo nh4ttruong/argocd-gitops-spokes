@@ -1,0 +1,6 @@
+# Shared defaults for webhook — merged first, then values/<env>/values.yaml
+podinfo:
+  service:
+    type: ClusterIP
+  ui:
+    message: "webhook"

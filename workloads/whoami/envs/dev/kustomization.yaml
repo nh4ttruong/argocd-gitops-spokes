@@ -1,0 +1,24 @@
+# dev overlay for whoami — Kustomize-engine example app
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - ../../base
+
+# Đơn vị promote: đổi newTag là promote version cho môi trường này
+images:
+  - name: traefik/whoami
+    newTag: v1.10.1
+
+labels:
+  - pairs:
+      env: dev
+
+patches:
+  - target:
+      kind: Deployment
+      name: whoami
+    patch: |-
+      - op: replace
+        path: /spec/replicas
+        value: 1

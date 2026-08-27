@@ -1,0 +1,13 @@
+# production overrides for webhook
+podinfo:
+  replicaCount: 3
+  logLevel: info
+  ui:
+    message: "webhook @ production"
+  resources:
+    requests:
+      cpu: 100m
+      memory: 64Mi
+    limits:
+      cpu: 500m
+      memory: 256Mi

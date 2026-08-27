@@ -1,0 +1,13 @@
+apiVersion: v2
+name: backend
+description: Backend API service (Demo workload — podinfo)
+type: application
+version: 0.1.0
+appVersion: 6.14.1
+
+# NOTE (demo): every app wraps podinfo as a stand-in workload.
+# In a real case, point this dependency at your in-house app chart.
+dependencies:
+  - name: podinfo
+    version: 6.14.1
+    repository: https://stefanprodan.github.io/podinfo

@@ -1,0 +1,6 @@
+# dev overrides for homepage
+podinfo:
+  replicaCount: 1
+  logLevel: debug
+  ui:
+    message: "homepage @ dev"

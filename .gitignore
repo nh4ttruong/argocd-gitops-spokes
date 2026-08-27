@@ -1,0 +1,8 @@
+# Helm build artifacts
+**/Chart.lock
+**/tmpcharts*
+
+# Charts downloaded by `helm dependency update` (wrapper charts)
+workloads/*/charts/*/charts/
+
+.vscode

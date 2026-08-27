@@ -1,0 +1,5 @@
+# Đơn vị promote duy nhất của webhook ở production.
+# Promote nghĩa là đổi tag ở đây, bằng cp, sed hay sửa tay đều được.
+podinfo:
+  image:
+    tag: 6.14.1
